@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="MelcoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.lam.migracion.melco.entidades.Marcaje</class>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://67.208.45.152:1433;databaseName=ADAM_MX_MITSUBISHI"/>
+      <property name="javax.persistence.jdbc.password" value="Q3m5Yg29n"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.user" value="proc_mitsu"/>
+      <property name="eclipselink.canonicalmodel.subpackage" value="melco"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="BioStarPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.lam.migracion.melco.entidades.EventLog</class>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <validation-mode>NONE</validation-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost\BSSERVER:1433;databaseName=BioStar"/>
+      <property name="javax.persistence.jdbc.password" value="Bio"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.user" value="Bio"/>
+      <property name="eclipselink.canonicalmodel.subpackage" value="biostar"/>
+    </properties>
+  </persistence-unit>
+</persistence>
