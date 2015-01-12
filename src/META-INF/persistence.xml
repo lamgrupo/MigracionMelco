@@ -7,9 +7,9 @@
     <validation-mode>NONE</validation-mode>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://67.208.45.152:1433;databaseName=ADAM_MX_MITSUBISHI"/>
-      <property name="javax.persistence.jdbc.password" value="Q3m5Yg29n"/>
+      <property name="javax.persistence.jdbc.password" value="4We7zX53k6"/>
       <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-      <property name="javax.persistence.jdbc.user" value="proc_mitsu"/>
+      <property name="javax.persistence.jdbc.user" value="consmit2"/>
       <property name="eclipselink.canonicalmodel.subpackage" value="melco"/>
     </properties>
   </persistence-unit>
